@@ -1,6 +1,10 @@
 {
   "version": 2,
-  "routes": [
+  "routes": [ 
+    {
+  "src": "/api/(.*)",
+  "dest": "/api/$1"
+},
     {
       "src": "/sw.js",
       "headers": {
